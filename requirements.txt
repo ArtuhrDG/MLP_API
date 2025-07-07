@@ -1,7 +1,7 @@
 fastapi
 uvicorn
 pydantic
-tensorflow==2.11.0
+tensorflow
 numpy
 joblib
 
