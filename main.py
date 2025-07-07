@@ -5,6 +5,10 @@ import tensorflow as tf
 import joblib
 import numpy as np
 
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
+
 # === Cargar recursos del modelo entrenado ===
 model = tf.keras.models.load_model('modelo_peso_mejorado1.h5')
 scaler = joblib.load('scaler_area1.pkl')
